@@ -18,6 +18,9 @@ public class DynamicBeat extends JFrame {
         setVisible(true);   // 게임창 보이게 true
 
         introBackground = new ImageIcon(Main.class.getResource("../images/main.jpg")).getImage();   // main 이미지 가져오기
+
+        Music mainMusic = new Music("apt.mp3", true);
+        mainMusic.start();
     }
 
     // 프로그램 해상도에 맞는 이미지 맞춤
